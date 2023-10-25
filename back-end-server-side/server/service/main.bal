@@ -33,10 +33,10 @@ mongodb:Client|mongodb:DatabaseError|mongodb:ApplicationError|error mongodbClien
 });
 
 // Define MongoDB Collections
-// mongodb:Collection departmentObjectivesCollection = mongodbClient["departmentObjectives"];
-// mongodb:Collection employeeKpiCollection = mongodbClient["employeeKPI"];
-// mongodb:Collection employeeCollection = mongodbClient["employee"];
-// mongodb:Collection supervisorCollection = mongodbClient["supervisor"];
+ mongodb:Collection departmentObjectivesCollection = mongodbClient["departmentObjectives"];
+mongodb:Collection employeeKpiCollection = mongodbClient["employeeKPI"];
+ mongodb:Collection employeeCollection = mongodbClient["employee"];
+ mongodb:Collection supervisorCollection = mongodbClient["supervisor"];
 
 // Define GraphQL Schema
 graphql:TypeDefinitions departmentObjectivesTypeDefs = `

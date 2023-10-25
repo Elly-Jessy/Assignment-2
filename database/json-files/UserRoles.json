@@ -1,0 +1,30 @@
+[
+    {
+      "role": "HoD",
+      "permissions": [
+        "Create department objectives",
+        "Delete department objectives",
+        "View Employees Total Scores",
+        "Assign the Employee to a supervisor"
+      ]
+    },
+    {
+      "role": "Supervisor",
+      "permissions": [
+        "Approve Employee's KPIs",
+        "Delete Employee’s KPIs",
+        "Update Employee's KPIs",
+        "View Employee Scores (only employees assigned to the supervisor)",
+        "Grade the employee’s KPIs"
+      ]
+    },
+    {
+      "role": "Employee",
+      "permissions": [
+        "Create their KPIs",
+        "Grade their Supervisor",
+        "View Their Scores"
+      ]
+    }
+  ]
+  

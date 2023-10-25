@@ -1,0 +1,62 @@
+type Department {
+  id: ID!
+  name: String!
+  objectives: [Objective!]!
+  employees: [Employee!]!
+}
+
+type Objective {
+  id: ID!
+  description: String!
+  weight: Int!
+}
+
+type Employee {
+  id: ID!
+  name: String!
+  department: Department!
+  supervisor: Employee
+  kpis: [KPI!]!
+}
+
+type KPI {
+  id: ID!
+  description: String!
+  metric: String!
+  value: Float
+}
+
+type User {
+  id: ID!
+  username: String!
+  role: UserRole!
+}
+
+enum UserRole {
+  HoD
+  Supervisor
+  Employee
+}
+
+type Authentication {
+  id: ID!
+  user: User!
+  token: String
+}
+
+type Query {
+  getDepartment(id: ID!): Department
+  getEmployee(id: ID!): Employee
+  getSupervisor(id: ID!): Employee
+  getKPI(id: ID!): KPI
+  getUser(id: ID!): User
+}
+
+type Mutation {
+  createDepartment(name: String!): Department
+  createObjective(description: String!, weight: Int!): Objective
+  createEmployee(name: String!, departmentId: ID!, supervisorId: ID): Employee
+  createKPI(description: String!, metric: String!): KPI
+  createUser(username: String!, role: UserRole!): User
+  authenticate(username: String!, password: String!): Authentication
+}

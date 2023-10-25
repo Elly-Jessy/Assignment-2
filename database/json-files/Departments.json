@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Computer Science",
+      "objectives": [
+        { "name": "Objective 1", "percentageContribution": 30 },
+        { "name": "Objective 2", "percentageContribution": 40 }
+      ]
+    },
+    {
+      "name": "Information Technology",
+      "objectives": [
+        { "name": "Objective 1", "percentageContribution": 25 },
+        { "name": "Objective 2", "percentageContribution": 35 }
+      ]
+    }
+  ]
+  

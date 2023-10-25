@@ -1,0 +1,17 @@
+[
+  {
+    "username": "hod123",
+    "password": "hashed_password_for_HoD",
+    "role": "HoD"
+  },
+  {
+    "username": "supervisor456",
+    "password": "hashed_password_for_Supervisor",
+    "role": "Supervisor"
+  },
+  {
+    "username": "employee789",
+    "password": "hashed_password_for_Employee",
+    "role": "Employee"
+  }
+]

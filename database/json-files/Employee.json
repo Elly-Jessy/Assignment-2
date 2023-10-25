@@ -1,0 +1,21 @@
+[
+    {
+      "name": "John Doe",
+      "departmentId": "",
+      "supervisorId": "",
+      "kpiData": [
+        { "name": "KPI 1", "unit": "Percentage" },
+        { "name": "KPI 2", "unit": "Time (hours)" }
+      ]
+    },
+    {
+      "name": "Jane Smith",
+      "departmentId": "",
+      "supervisorId": "",
+      "kpiData": [
+        { "name": "KPI 1", "unit": "Percentage" },
+        { "name": "KPI 2", "unit": "Time (hours)" }
+      ]
+    }
+  ]
+  

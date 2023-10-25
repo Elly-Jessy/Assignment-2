@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  client:
+    image: /I WILL REPLACE IT WITH MY IMAGE NAME
+    ports:
+      - "8080:8080"
+
+  server:
+    image: //I WILL REPLACE IT WITH MY IMAGE NAME
+    ports:
+      - "9090:9090"

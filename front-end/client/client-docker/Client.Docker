@@ -1,0 +1,14 @@
+# Use an official Ballerina runtime as a parent image
+FROM ballerina/ballerina:latest
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the Ballerina project files to the working directory
+COPY . .
+
+# Expose the necessary port (if applicable)
+EXPOSE 8080
+
+# Define the command to run the Ballerina service
+CMD ["ballerina", "run", "-s", "service.bal"]

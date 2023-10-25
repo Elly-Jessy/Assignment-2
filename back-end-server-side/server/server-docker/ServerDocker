@@ -1,0 +1,9 @@
+FROM ballerina/ballerina:latest
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+EXPOSE 9090
+
+CMD ["ballerina", "run", "-s", "service.bal"]
